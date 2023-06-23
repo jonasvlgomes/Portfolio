@@ -497,7 +497,6 @@ form button:active {
   transform: rotate(0deg);
 }
 /*Games Card*/
-
 .games-menu {
   display: flex;
   justify-content: center;
@@ -683,6 +682,41 @@ form button:active {
   transform: translateY(2px) translateX(1px);
   box-shadow: 0 0 0 0 rgb(var(--text-color));
 }
+/*Image Gallery*/
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 20px 150px 20px;
+}
+.gallery-container .heading {
+  font-size: 3em;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  width: 50%;
+}
+.gallery-container .grid-photos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.gallery-container .grid-photos .dream {
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+  overflow: hidden;
+}
+.gallery-container .grid-photos .dream img,
+.gallery-container .grid-photos .dream video {
+  width: 100%;
+  display: block;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  border-radius: 5px;
+}
+
 /*Footer*/
 footer {
   position: fixed;
@@ -835,5 +869,13 @@ footer {
 
   .navbar.open {
     right: 2%;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .gallery-container .grid-photos {
+    flex-direction: column;
+  }
+  .gallery-container .grid-photos .dream {
+    width: 100%;
   }
 }
