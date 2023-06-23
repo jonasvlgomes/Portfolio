@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Jonas Gomes" />
+    <meta name="description" content="Portfolio Website" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="keywords"
+      content="Portfolio, WebDesign, Job, 3D, html, css, js"
+    />
+    <link rel="icon" href="images/logo.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <i class="logo"
+        ><span><img src="images/logo.svg" alt="Logo" /></span
+      ></i>
+      <ul class="navbar">
+        <li><a href="home.html" data-content="Home">Home</a></li>
+        <li><a href="art.html" data-content="Art">Art</a></li>
+        <li>
+          <a href="programing.html" data-content="Programming">Programming</a>
+        </li>
+        <li><a href="games.html" data-content="Games">Games</a></li>
+      </ul>
+      <div class="main-header">
+        <a href="about.html" class="active" data-content="About">About</a>
+        <a href="contact.html" data-content="Contact">Contact</a>
+        <input
+          type="checkbox"
+          id="label"
+          class="checkbox"
+          onclick="darkMode()"
+        />
+        <label for="label" class="label">
+          <i class="ri-sun-fill" id="sun-icon"></i>
+          <i class="ri-contrast-2-fill" id="moon-icon"></i>
+          <div class="ball"></div>
+        </label>
+        <div class="bx bx-menu" id="menu-icon" onclick="navbarOpen()"></div>
+      </div>
+    </header>
+    <br /><br />
+    <br />
+    <main></main>
+    <footer>
+      <div class="footer">
+        <div class="social">
+          <a href="https://www.instagram.com/rawkusperhaps/" target="_blank"
+            ><i class="bx bxl-instagram-alt"></i
+          ></a>
+          <a href="https://twitter.com/rawkusperhaps" target="_blank"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <a href="https://github.com/jonasvlgomes" target="_blank"
+            ><i class="bx bxl-github"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright &copy;2023 Jonas Gomes</p>
+      </div>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

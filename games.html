@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Jonas Gomes" />
+    <meta name="description" content="Portfolio Website" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="keywords"
+      content="Portfolio, WebDesign, Job, 3D, html, css, js"
+    />
+    <link rel="icon" href="images/logo.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <i class="logo"
+        ><span><img src="images/logo.svg" alt="Logo" /></span
+      ></i>
+      <ul class="navbar">
+        <li><a href="home.html" data-content="Home">Home</a></li>
+        <li><a href="art.html" data-content="Art">Art</a></li>
+        <li>
+          <a href="programing.html" data-content="Programming">Programming</a>
+        </li>
+        <li>
+          <a href="games.html" class="active" data-content="Games">Games</a>
+        </li>
+      </ul>
+      <div class="main-header">
+        <a href="about.html" data-content="About">About</a>
+        <a href="contact.html" data-content="Contact">Contact</a>
+        <input
+          type="checkbox"
+          id="label"
+          class="checkbox"
+          onclick="darkMode()"
+        />
+        <label for="label" class="label">
+          <i class="ri-sun-fill" id="sun-icon"></i>
+          <i class="ri-contrast-2-fill" id="moon-icon"></i>
+          <div class="ball"></div>
+        </label>
+        <div class="bx bx-menu" id="menu-icon" onclick="navbarOpen()"></div>
+      </div>
+    </header>
+    <br /><br />
+    <br />
+    <main>
+      <div class="game-container">
+        <div class="games-menu" id="top-game">
+          <div class="card-game">
+            <div class="card-image">
+              <img src="images/glitchoria.png" alt="Cover art" />
+            </div>
+            <h2>Glitchoria</h2>
+            <p>2D, Metroidvania, PC</p>
+            <a href="#glitchoria">More Info</a>
+          </div>
+          <div class="card-game">
+            <div class="card-image">
+              <img src="images/spooky.png" alt="Cover art" />
+            </div>
+            <h2>Spooky Atlantis</h2>
+            <p>VR, Survive/Adventure, Google Cardboard</p>
+            <a href="#spooky">More Info</a>
+          </div>
+          <div class="card-game">
+            <div class="card-image">
+              <img src="images/sixfeet.png" alt="Cover art" />
+            </div>
+            <h2>Six Feet Under</h2>
+            <p>Top View, Shooter, PC</p>
+            <a href="#sixfeet">More Info</a>
+          </div>
+        </div>
+        <div class="games-more">
+          <section id="glitchoria">
+            <div class="image-link">
+              <img src="images/glitchoria.png" alt="Cover art" />
+              <div class="text-effect">
+                <a href="https://fidalg0.itch.io/glitchoria" target="_blank"
+                  >Game Page</a
+                >
+              </div>
+            </div>
+            <div class="text-game">
+              <h2>Glithcoria</h2>
+              <p>
+                It is prototype of a 2D Metroidvania game. In Glitchoria you
+                play as a character named Nollo and you have to fight enemies
+                corrupted by glitches while using your own glitches as power. We
+                used Unity. In this game I programed, did animation and worked
+                on the audio. I used C# and worked on the save system,
+                platforms, obstacles and implemented the audio and audio
+                triggers. I also programed the menus and dialogue system. I did
+                the animations of the enemies using 3ds Max and rendering it in
+                pixel art. I worked on some audio effects using FL Studio and
+                Reaper and using recorded sounds
+              </p>
+              <p><span>Tools Used:</span></p>
+              <img src="images/logos/unity.png" alt="Unity Logo" />
+              <img src="images/logos/csharp.png" alt="C# Logo" />
+              <img src="images/logos/3dsMax.png" alt="3Ds Max Logo" />
+              <img src="images/logos/FlStudio.png" alt="Fl Studio Logo" />
+              <img src="images/logos/reaper.png" alt="Reaper Logo" />
+              <a href="#top-game">Back to Top</a>
+            </div>
+          </section>
+          <section id="spooky">
+            <div class="image-link">
+              <img src="images/spooky.png" alt="Cover art" />
+              <div class="text-effect">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.FaylureProductions.SpookyAtlatins"
+                  target="_blank"
+                  >Game Page</a
+                >
+              </div>
+            </div>
+            <div class="text-game">
+              <h2>Spooky Atlantis</h2>
+              <p>
+                A VR game made for Google Cardboard. It’s an survive/adventure
+                game. You play as an lost explorer in the middle of the ocean
+                where you have to find a way to escape while collecting
+                resources to survive. In this game I was in charge of
+                programming. We used Unity to develop it. I coded in C# and made
+                the enemies AI, the randomization of the level, the written
+                dialogue system and another scripts. I also model some of the
+                scenery elements and made one song and some sound effects.
+              </p>
+              <p><span>Tools Used:</span></p>
+              <img src="images/logos/unity.png" alt="Unity Logo" />
+              <img src="images/logos/csharp.png" alt="C# Logo" />
+              <img src="images/logos/blender.png" alt="3Ds Max Logo" />
+              <img src="images/logos/FlStudio.png" alt="Fl Studio Logo" />
+              <img src="images/logos/reaper.png" alt="Reaper Logo" />
+              <img src="images/logos/cardboard.png" alt="Reaper Logo" />
+              <a href="#top-game">Back to Top</a>
+            </div>
+          </section>
+          <section id="sixfeet">
+            <div class="image-link">
+              <img src="images/sixfeet.png" alt="Cover art" />
+              <div class="text-effect">
+                <a
+                  href="https://rawkusperhaps.itch.io/six-feet-under"
+                  target="_blank"
+                  >Game Page</a
+                >
+              </div>
+            </div>
+            <div class="text-game">
+              <h2>Six Feet Under</h2>
+              <p>
+                A game that I made as my final project in my Bachelor degree. It
+                is a top view shooter game. You play as prisoner that is caught
+                in a mutiny and as to fight back to survive. We made this game
+                in Game Maker Studio I was in charge of the level design. I also
+                made the environment assets in pixel art using Photoshop and
+                made the dead enemies also using Photoshop. I made the menu and
+                menu animations;
+              </p>
+              <p><span>Tools Used:</span></p>
+              <img src="images/logos/gameMaker.png" alt="Unity Logo" />
+              <img src="images/logos/Photoshop.png" alt="C# Logo" />
+              <a href="#top-game">Back to Top</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="social">
+          <a href="https://www.instagram.com/rawkusperhaps/" target="_blank"
+            ><i class="bx bxl-instagram-alt"></i
+          ></a>
+          <a href="https://twitter.com/rawkusperhaps" target="_blank"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <a href="https://github.com/jonasvlgomes" target="_blank"
+            ><i class="bx bxl-github"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright &copy;2023 Jonas Gomes</p>
+      </div>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
