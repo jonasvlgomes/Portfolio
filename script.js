@@ -95,6 +95,24 @@ function popupGrid(content, number) {
     }
     popupGrid(content, number);
   };
+  document.onkeydown = function () {
+    switch (window.event.keyCode) {
+      case 37:
+        number--;
+        if (number < 0) {
+          number = 21;
+        }
+        popupGrid(content, number);
+        break;
+      case 39:
+        number++;
+        if (number > 21) {
+          number = 0;
+        }
+        popupGrid(content, number);
+        break;
+    }
+  };
 }
 
 gridArray.forEach((image) => {
