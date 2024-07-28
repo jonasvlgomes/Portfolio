@@ -431,7 +431,7 @@ form button:active {
   transform: scale(0.95);
 }
 /*Programming card*/
-.programming-container {
+.figma-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -446,9 +446,10 @@ form button:active {
   margin-top: 10vh;
   margin-bottom: 50vh;
 }
-.card-programming {
+.card-figma {
   width: 250px;
   height: 250px;
+  text-align: center;
   max-height: 250px;
   min-width: 200px;
   background: rgb(var(--text-color2));
@@ -458,7 +459,7 @@ form button:active {
   font-size: 2em;
   font-weight: 900;
 }
-.card-programming:hover {
+.card-figma:hover {
   border-radius: 15px;
   cursor: pointer;
   transform: scale(1.2);
@@ -475,7 +476,7 @@ form button:active {
   opacity: 1;
   border-radius: 15px;
 }
-.card-programming:hover .first-content {
+.card-figma:hover .first-content {
   height: 0px;
   opacity: 0;
 }
@@ -491,7 +492,36 @@ form button:active {
   font-size: 0px;
   transform: rotate(90deg) scale(-1);
 }
-.card-programming:hover .second-content {
+.second-content img{
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  object-fit: fill;
+  background: rgb(var(--text-color2));
+  transition: all 0.4s;
+  border-radius: 15px;
+  font-size: 2em;
+  font-weight: 900;
+  opacity: 0.5;
+}
+.second-content a{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all 0.1s;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  color: rgb(var(--text-color));
+  text-shadow: 1px 1px rgba(0, 0, 0, 1);
+}
+.second-content a:hover{
+  color: rgb(var(--text-color2));
+  font-size: 1.03em;
+  text-decoration: underline;
+
+}
+
+.card-figma:hover .second-content {
   opacity: 1;
   height: 100%;
   font-size: 1.8rem;
