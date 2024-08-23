@@ -431,7 +431,7 @@ form button:active {
   transform: scale(0.95);
 }
 /*Programming card*/
-.figma-container {
+.ui-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -446,7 +446,7 @@ form button:active {
   margin-top: 10vh;
   margin-bottom: 50vh;
 }
-.card-figma {
+.card-ui {
   width: 250px;
   height: 250px;
   text-align: center;
@@ -459,7 +459,7 @@ form button:active {
   font-size: 2em;
   font-weight: 900;
 }
-.card-figma:hover {
+.card-ui:hover {
   border-radius: 15px;
   cursor: pointer;
   transform: scale(1.2);
@@ -476,7 +476,7 @@ form button:active {
   opacity: 1;
   border-radius: 15px;
 }
-.card-figma:hover .first-content {
+.card-ui:hover .first-content {
   height: 0px;
   opacity: 0;
 }
@@ -521,7 +521,7 @@ form button:active {
 
 }
 
-.card-figma:hover .second-content {
+.card-ui:hover .second-content {
   opacity: 1;
   height: 100%;
   font-size: 1.8rem;
